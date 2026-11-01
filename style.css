@@ -1047,12 +1047,12 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
 }
 .hero-portrait img {
   position:absolute;
-  top:25%;
+  top:calc(25% - 60px);
   left:50%;
   display:block;
   width:auto;
   max-width:none;
-  height:155%;
+  height:calc(155% + 60px);
   object-fit:contain;
   object-position:center top;
   transform:translateX(-50%);
@@ -1066,8 +1066,7 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
   height:100%;
 }
 .hero-portrait-welding img {
-  top:25%;
-  height:140%;
+  height:calc(140% + 60px);
   filter:drop-shadow(0 10px 7px rgba(5,5,5,.12));
 }
 /* Posisi foto workshop; nilai left di breakpoint Bagian 18 mengatur jarak antar foto. */
@@ -1118,9 +1117,9 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
   .hero-copy { max-width:49%; }
   .hero h1 { font-size:clamp(3.25rem,6.3vw,5.2rem); }
   .hero-visual { width:56%; }
-  .hero-portrait img { top:22%; height:148%; }
+  .hero-portrait img { top:calc(22% - 60px); height:calc(148% + 60px); }
   .hero-portrait-welding { right:-17%; }
-  .hero-portrait-welding img { top:22%; height:134%; }
+  .hero-portrait-welding img { height:calc(134% + 60px); }
   .hero-portrait-field { left:-27%; }
   .hero-portrait-formal { right:-0%; }
   .hero-portrait figcaption { display:none; }
@@ -1157,9 +1156,9 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
       linear-gradient(90deg,rgba(255,255,255,.82),rgba(255,255,255,.52)),
       url("assets/images/hero-rail-background.webp");
   }
-  .hero-portrait img { top:19%; height:135%; }
+  .hero-portrait img { top:calc(19% - 60px); height:calc(135% + 60px); }
   .hero-portrait-welding { right:-18%; }
-  .hero-portrait-welding img { top:19%; height:120%; }
+  .hero-portrait-welding img { height:calc(120% + 60px); }
   .hero-portrait-field { left:-25%; }
   .hero-portrait-formal { right:0%; }
   .hero-portrait figcaption,
@@ -1170,6 +1169,7 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
 
 /* 18C. RESPONSIVE HERO - MOBILE (391px–600px) */
 @media (max-width:600px) {
+  .section-kicker span:last-child { text-align:right; }
   .hero {
     grid-template-columns:1fr;
     gap:0;
@@ -1178,7 +1178,7 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
     padding-bottom:0;
   }
   .hero-copy { max-width:none; z-index:2; }
-  .hero h1 { font-size:clamp(3.2rem,13vw,4.6rem); }
+  .hero h1 { font-size:clamp(2.6rem,11vw,4.1rem); }
   .hero-visual {
     position:relative;
     top:auto;
@@ -1197,9 +1197,9 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
       linear-gradient(90deg,rgba(255,255,255,.82),rgba(255,255,255,.52)),
       url("assets/images/hero-rail-background.webp");
   }
-  .hero-portrait img { top:18%; height:132%; }
+  .hero-portrait img { top:calc(18% - 60px); height:calc(132% + 60px); }
   .hero-portrait-welding { right:-17%; }
-  .hero-portrait-welding img { top:18%; height:117%; }
+  .hero-portrait-welding img { height:calc(117% + 60px); }
   .hero-portrait-field { left:-27%; }
   .hero-portrait-formal { left:-1%; }
   .hero-portrait figcaption,
@@ -1215,9 +1215,9 @@ button:focus-visible,a:focus-visible { outline:3px solid var(--black); box-shado
 
 /* 18D. RESPONSIVE HERO - PONSEL KECIL (maksimal 390px) */
 @media (max-width:390px) {
-  .hero h1 { font-size:clamp(3.15rem,15vw,4.2rem); }
+  .hero h1 { font-size:clamp(2.2rem,11vw,2.9rem); }
   .hero-visual { height:380px; }
-  .hero-portrait img { top:17%; height:128%; }
+  .hero-portrait img { top:calc(17% - 60px); height:calc(128% + 60px); }
   .hero-actions { gap:10px; }
   .button-primary,
   .button-secondary { padding:11px 13px; font-size:10px; }
